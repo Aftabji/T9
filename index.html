@@ -34,6 +34,8 @@
 </head>
 
 <body>
+	<form id ="form-print" enctype="text/plain"
+		class="form-control">
 	<h1 class="heading">
 	Taw9eel
 	</h1>
@@ -42,8 +44,7 @@
 	</h3>
 
 	<!-- Form encrypted as text -->
-	<form id ="form-print" enctype="text/plain"
-		class="form-control">
+	
 
 		<label for="name">
 		<strong>Full Name: </strong>
@@ -86,7 +87,7 @@
 		</select>
 		<br>
 		
-		<label for="message">
+		<label for="">
 		<strong>Enter Message </strong>
 		</label>
 		<textarea class= "form-control"
@@ -96,10 +97,10 @@
 		</textarea>
 		<br>
 
-		<input type="button" class="btn btn-primary"
-		onclick="GeneratePdf();" value="GeneratePdf">
+		
 	</form>
-				
+			<input type="button" class="btn btn-primary"
+		onclick="GeneratePdf();" value="GeneratePdf">	
 	<script>		
 		// Function to GeneratePdf
 		function GeneratePdf() {
